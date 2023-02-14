@@ -1,0 +1,12 @@
+﻿<Window x:Class="webtv_partition_editor.DiskInitialize"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:self="clr-namespace:webtv_partition_editor"
+        Title="Initialize Disk" Height="111" Width="308" ResizeMode="NoResize" WindowStartupLocation="CenterOwner" Icon="static/images/initialize-disk.png">
+    <Grid>
+        <Label Content="Target Layout:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <ComboBox Name="target_layout" SelectedIndex="0" Margin="100,14,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="184"/>
+        <Button Command="{Binding cancel_command}" Content="Cancel" Margin="129,41,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75"/>
+        <Button Command="{Binding initilize_disk_command}" Content="Initilize" Margin="209,41,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75"/>
+    </Grid>
+</Window>
